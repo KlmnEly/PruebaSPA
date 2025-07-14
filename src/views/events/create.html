@@ -1,0 +1,33 @@
+<form class="row shadow g-3 w-50 mx-auto rounded p-4 mt-5">
+    <h2 class="text-center color-purple">Crear Evento</h2>
+    <div class="col-sm-6">
+        <label for="title" class="form-label fw-bold">Titulo de evento</label>
+        <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="" />
+    </div>
+    
+        <div class="col-sm-6">
+            <label for="location" class="form-label fw-bold">Ubicación</label>
+            <input type="text" class="form-control" name="location" id="location" aria-describedby="helpId" placeholder="" />
+        </div>
+
+    <div class="col-sm-12">
+        <label for="description" class="form-label fw-bold">Descripción</label>
+        <textarea type="text" class="form-control" name="description" id="description" aria-describedby="helpId" placeholder="" rows="3"></textarea>
+    </div>
+
+    <div class="col-sm-6">
+        <label for="date" class="form-label fw-bold">Fecha</label>
+        <input type="date" class="form-control" name="date" id="date" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="capacity" class="form-label fw-bold">Capacidad</label>
+        <input type="number" class="form-control" name="capacity" id="capacity" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+    <input type="text" name="created" id="created" hidden>
+    <div class="col-sm-6 mx-auto">
+        <button id="btnEvents" class="btn bg-purple w-100">Crear Evento</button>
+    </div>
+</form>

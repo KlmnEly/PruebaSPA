@@ -1,0 +1,59 @@
+<form class="row shadow g-3 w-50 mx-auto rounded p-4 mt-5">
+    <h2 class="text-center color-purple">Editar Evento</h2>
+    <div class="col-sm-6">
+        <label for="title" class="form-label fw-bold">Titulo de evento</label>
+        <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="" />
+    </div>
+    
+        <div class="col-sm-6">
+            <label for="location" class="form-label fw-bold">Ubicación</label>
+            <input type="text" class="form-control" name="location" id="location" aria-describedby="helpId" placeholder="" />
+        </div>
+
+    <div class="col-sm-12">
+        <label for="description" class="form-label fw-bold">Descripción</label>
+        <textarea type="text" class="form-control" name="description" id="description" aria-describedby="helpId" placeholder="" rows="3"></textarea>
+    </div>
+
+    <div class="col-sm-6">
+        <label for="date" class="form-label fw-bold">Fecha</label>
+        <input type="date" class="form-control" name="date" id="date" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="capacity" class="form-label fw-bold">Capacidad</label>
+        <input type="number" class="form-control" name="capacity" id="capacity" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+    <input type="text" name="created" id="created" hidden>
+    <div class="col-sm-6 mx-auto">
+        <button id="btnEventEdit" class="btn bg-purple w-100">Guardar información</button>
+    </div>
+</form>
+
+<hr>
+<button class="btn bg-purple"><a class="nav-link" href="/event-create">Crear Evento</a></button>
+<table class="table mx-auto mt-5 text-center" id="events-table">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Descripción</th>
+            <th>Ubicación</th>
+            <th>Fecha</th>
+            <th>Cupos Disponibles</th>
+            <th>capacidad máxima</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="appointment-modal" style="display:none;">
+    <h2>Reservar Asientos</h2>
+    <p>Evento: <span id="appointment-event-title"></span></p>
+    <label for="numTickets">Cantidad de Asientos:</label>
+    <input type="number" id="numTickets" min="1" value="1">
+    <button id="confirAppointmentBtn">Confirmar Reserva</button>
+    <button id="cancelAppointmentBtn">Cancelar</button>
+</div>

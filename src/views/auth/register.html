@@ -1,0 +1,31 @@
+<form id="registerForm" class="row shadow g-3 w-50 mx-auto rounded p-4 mt-5">
+    <h2 class="text-center color-purple">Registrarse</h2>
+    <div class="col-md-6">
+        <label for="name" class="form-label fw-bold">Nombre completo</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+            placeholder="" />
+    </div>    
+    
+    <div class="col-md-6">
+        <label for="email" class="form-label fw-bold">Correo</label>
+        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+
+    <div class="col-md-6">
+        <label for="password" class="form-label fw-bold">Contraseña</label>
+        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+
+    <div class="col-md-6">
+        <label for="repeatPassword" class="form-label fw-bold">Repetir Contraseña</label>
+        <input type="password" class="form-control" name="repeatPassword" id="repeatPassword" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+<div class="col-md-6">
+    <button id="btnRegister" class="btn bg-purple w-100">Crear usuario</button>
+    <small><a href="/login" class="nav-link link-primary pt-2">Tengo una cuenta</a></small>
+</div>
+</form>
+<script type="module" src="../../controller/auth.js"></script>
