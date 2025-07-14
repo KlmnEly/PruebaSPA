@@ -3,7 +3,7 @@ import axios from "axios";
 let currentEditId = null;
 const usersUrl = "http://localhost:8000/users";
 
-export async function getData() {
+export async function getDataUsers() {
     try {
         const resp = await axios.get(usersUrl);
         const data = resp.data;
@@ -18,7 +18,7 @@ export async function getData() {
     }
 }
 
-export async function sendData(formData) {
+export async function sendDataUsers(formData) {
     try {
         await axios.post(usersUrl, formData);
         alert('Usuario creado exitosamente!')
@@ -30,12 +30,10 @@ export async function sendData(formData) {
     }
 }
 
-// Función para establecer el ID del usuario que se está editando
 function setEditId(id) {
     currentEditId = id;
 }
 
-// Función para limpiar el ID cuando ya no se edita
 function clearEditId() {
     currentEditId = null;
 }
@@ -71,7 +69,7 @@ export async function editUser(id) {
         setEditId(id);
 
     } catch (error) {
-        console.error('Error al obtener usuario para editar:', error); // Usa console.error para errores
+        console.error('Error al obtener usuario para editar:', error);
         alert("Error al obtener el usuario para editar.");
     }
 }
@@ -123,8 +121,8 @@ export async function updateUser() {
         repeatPasswordInput.value = '';
         createdInput.value = '';
 
-        clearEditId(); // Limpiar el ID de edición
-        location.reload(); // Recargar la página para ver los cambios actualizados
+        clearEditId();
+        location.reload(); 
 
     } catch (error) {
         console.error('Error al actualizar usuario:', error);

@@ -46,7 +46,8 @@ json-server --watch database/db.json --port 8000
       "date": "2023-10-01 11:00",
       "location": "Location 1",
       "capacity": 20,
-      "availableSeats": 20
+      "availableSeats": 19,
+      "created": "2023-10-01T10:00:00Z"
     },
     {
       "id": "2",
@@ -55,7 +56,17 @@ json-server --watch database/db.json --port 8000
       "date": "2023-10-02 15:00",
       "location": "Location 2",
       "capacity": 20,
-      "availableSeats": 20
+      "availableSeats": 20,
+      "created": "2023-10-01T10:00:00Z"
+    }
+  ],
+  "appointments": [
+    {
+        "id": "1",
+        "event_id": "1",
+        "numberOfTickets": 1,
+        "user_id": 1,
+        "created": "2023-10-01T10:00:00Z"
     }
   ]
 }
