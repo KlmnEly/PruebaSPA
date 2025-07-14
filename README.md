@@ -46,7 +46,7 @@ json-server --watch database/db.json --port 8000
       "date": "2023-10-01 11:00",
       "location": "Location 1",
       "capacity": 20,
-      "availableSeats": 19,
+      "availableSeats": 16,
       "created": "2023-10-01T10:00:00Z"
     },
     {
@@ -58,15 +58,39 @@ json-server --watch database/db.json --port 8000
       "capacity": 20,
       "availableSeats": 20,
       "created": "2023-10-01T10:00:00Z"
+    },
+    {
+      "id": "5e8f",
+      "title": "Festival perro",
+      "description": "espacial",
+      "date": "2025-07-19",
+      "location": "plaza de paz",
+      "availableSeats": 150,
+      "capacity": "300",
+      "created": "2025-07-14T16:52:43.524Z"
     }
   ],
   "appointments": [
     {
-        "id": "1",
-        "event_id": "1",
-        "numberOfTickets": 1,
-        "user_id": 1,
-        "created": "2023-10-01T10:00:00Z"
+      "id": "1",
+      "event_id": "1",
+      "numberOfTickets": 1,
+      "user_id": 1,
+      "created": "2023-10-01T10:00:00Z"
+    },
+    {
+      "id": "3f0a",
+      "event_id": "1",
+      "numberOfTickets": 3,
+      "user_id": "1",
+      "created": "2025-07-14T16:29:21.601Z"
+    },
+    {
+      "id": "4549",
+      "event_id": "5e8f",
+      "numberOfTickets": 150,
+      "user_id": "1",
+      "created": "2025-07-14T17:38:50.760Z"
     }
   ]
 }
