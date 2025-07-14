@@ -1,0 +1,47 @@
+<form class="row g-3 w-50 mx-auto mt-5">
+    <h2 class="text-center color-purple">Editar usuario</h2>
+    <div class="col-sm-12">
+        <label for="name" class="form-label fw-bold">Nombre completo</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="email" class="form-label fw-bold">Correo</label>
+        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="role" class="form-label fw-bold">rol</label>
+        <input type="text" class="form-control" name="role" id="role" aria-describedby="helpId" placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="password" class="form-label fw-bold">Contraseña</label>
+        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+
+    <div class="col-sm-6">
+        <label for="repeatPassword" class="form-label fw-bold">Repetir Contraseña</label>
+        <input type="password" class="form-control" name="repeatPassword" id="repeatPassword" aria-describedby="helpId"
+            placeholder="" />
+    </div>
+    <input type="text" name="created" id="created" hidden>
+    <div class="col-sm-6 mx-auto">
+        <button id="btnSendEdit" class="btn bg-purple w-100">Guardar información</button>
+    </div>
+</form>
+<hr>
+<table class="table w-50 mx-auto mt-5" id="users-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th>Fecha creación</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>

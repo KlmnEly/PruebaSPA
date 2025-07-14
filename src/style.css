@@ -1,0 +1,8 @@
+.bg-purple {
+    background: rgb(64, 4, 175) !important;
+    color: white !important;
+}
+
+.color-purple {
+    color: rgb(64, 4, 175) !important;
+}
